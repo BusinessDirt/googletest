@@ -8,12 +8,12 @@ project "GoogleTest"
       objdir ("bin-int/" .. outputdir .. "/GoogleTest")
 
       includedirs {
-         "vendor/googletest/googletest/include",
-         "vendor/googletest/googletest" 
+         "googletest/include",
+         "googletest" 
       }
 
       files {
-         "vendor/googletest/googletest/src/gtest-all.cc"
+         "googletest/src/gtest-all.cc"
       }
       
       filter "configurations:Debug"
